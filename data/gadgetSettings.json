@@ -1,6 +1,6 @@
 {
   "title": "Bill/ Payment History",
-  "icon": "work_capacity_limit",
+  "icon": "standard:work_capacity_limit",
   "summaryTitle": "Bill Summary",
   "paymentTitle": "Payment History"
 }
