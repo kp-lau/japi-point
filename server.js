@@ -98,7 +98,7 @@ app.get('/api/accounts', function (request, response) {
 
   var result;
   if (id) {
-    result = accountsData.filter(x.id === id);
+    result = accountsData.filter(x => x.id === id);
   } else {
     result = accountsData;
   }
