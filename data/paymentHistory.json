@@ -1,0 +1,64 @@
+[{
+  "accountId": 10001,
+  "records": [{
+    "status": "Paid",
+    "price": {
+      "currency": "hkd",
+      "currencyTag": "HK$",
+      "value": 500.00
+    },
+    "date": "2020-06-05",
+    "channel": "PPS"
+  }, {
+    "status": "Paid",
+    "price": {
+      "currency": "hkd",
+      "currencyTag": "HK$",
+      "value": 650.00
+    },
+    "date": "2020-05-05",
+    "channel": "ATM"
+  }]
+}, {
+  "accountId": 10002,
+  "records": [{
+    "status": "Unpaid",
+    "price": {
+      "currency": "hkd",
+      "currencyTag": "HK$",
+      "value": 400.00
+    },
+    "date": "2020-06-05",
+    "channel": "Cash"
+  }, {
+    "status": "Paid",
+    "price": {
+      "currency": "hkd",
+      "currencyTag": "HK$",
+      "value": 350.00
+    },
+    "date": "2020-05-05",
+    "channel": "Cash"
+  }]
+}, {
+  "accountId": 10003,
+  "records": [{
+    "status": "Failed",
+    "price": {
+      "currency": "jpy",
+      "currencyTag": "JPY$",
+      "value": 2500.00
+    },
+    "date": "2020-06-05",
+    "channel": "MasterCard"
+  }, {
+    "status": "Paid",
+    "price": {
+      "currency": "jpy",
+      "currencyTag": "JPY$",
+      "value": 2650.00
+    },
+    "date": "2020-05-05",
+    "channel": "MasterCard"
+  }]
+}]

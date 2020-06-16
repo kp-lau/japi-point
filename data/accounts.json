@@ -10,6 +10,7 @@
       },
       "cutoffDate": "2020-07-06",
       "dueDate": "2020-07-01",
+      "summaryLabel": "Current Bill OS Balance",
       "extras": [{
         "label": "Previous Balance B/F",
         "price": {
@@ -60,7 +61,7 @@
     "name": "Account 10003",
     "summary": {
       "price": {
-        "currency": "JPY",
+        "currency": "jpy",
         "currencyTag": "JPY$",
         "value": 7200.00
       },
@@ -69,14 +70,14 @@
       "extras": [{
         "label": "Previous Balance B/F",
         "price": {
-          "currency": "JPY",
+          "currency": "jpy",
           "currencyTag": "JPY$",
           "value": 0.00
         }
       }, {
         "label": "Current Charge",
         "price": {
-          "currency": "JPY",
+          "currency": "jpy",
           "currencyTag": "JPY$",
           "value": 5000.00
         }
