@@ -7,23 +7,30 @@ app.set('port', process.env.PORT || 5000);
 app.use(express.static('public'));
 app.use(bodyParser.json());
 
-app.get('/api', function(request, response) {
-    var nameString = request.query.name;
-    var historyString = request.query.history;
-    
-    var jsonContent = { 
-        title: nameString,
-        imageUrl: "https://image.flaticon.com/icons/png/512/61/61456.png",
-        contact: [ 
-            {id: 12345, name: "King Lai"},
-        ],
-        show: true 
-    };
+app.get('/api', function (request, response) {
+  var nameString = request.query.name;
+  var historyString = request.query.history;
 
-    response.send(JSON.parse(JSON.stringify(jsonContent)));
+  var jsonContent = {
+    title: nameString,
+    imageUrl: "https://image.flaticon.com/icons/png/512/61/61456.png",
+    contact: [
+      {
+        id: 1,
+        name: "King Lai"
+      },
+      {
+        id: 2,
+        name: "Jimmy Lau"
+      },
+    ],
+    show: true
+  };
+
+  response.send(JSON.parse(JSON.stringify(jsonContent)));
 });
 
 
 app.listen(app.get('port'), function () {
-    console.log('Express server listening on port ' + app.get('port'));
+  console.log('Express server listening on port ' + app.get('port'));
 });
