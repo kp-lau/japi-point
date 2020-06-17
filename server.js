@@ -12,7 +12,7 @@ app.get('/api/default', async function (request, response) {
   fs.readFile('./data/defaultAll.json', 'utf8', (err, data) => {
     if (err) { throw err; }
 
-    response.send(JSON.parse(JSON.stringify(data)));
+    response.send(JSON.parse(data));
   })
 });
 
