@@ -6,6 +6,9 @@
   "cutoffLabel": "Bill cut off date: ",
   "dueLabel": "Payment due date: ",
   "summaryLabel": "Current Bill OS Balance",
+  "paymentDate": "Payment date: ",
+  "paymentChannel": "Payment channel: ",
+  "viewAll": "View all",
   "defaultAll": {
     "id": "all",
     "name": "All Account",
