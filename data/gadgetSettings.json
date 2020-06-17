@@ -6,6 +6,7 @@
   "cutoffLabel": "Bill cut off date: ",
   "dueLabel": "Payment due date: ",
   "summaryLabel": "Current Bill OS Balance",
+  "paymentStatus": "Status",
   "paymentDate": "Payment date: ",
   "paymentChannel": "Payment channel: ",
   "viewAll": "View all"
