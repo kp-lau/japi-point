@@ -7,8 +7,13 @@ app.set('port', process.env.PORT || 5000);
 app.use(express.static('public'));
 app.use(bodyParser.json());
 
-app.get('/api', async function (request, response) {
-  response.send(JSON.parse(JSON.stringify({server: "running"})));
+// Default account data (all)
+app.get('/api/default', async function (request, response) {
+  fs.readFile('./data/defaultAll.json', 'utf8', (err, data) => {
+    if (err) { throw err; }
+
+    response.send(JSON.parse(JSON.stringify(data)));
+  })
 });
 
 // Account data

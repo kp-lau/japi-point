@@ -1,0 +1,54 @@
+{
+  "title": "Bill/ Payment History",
+  "icon": "standard:work_capacity_limit",
+  "summaryTitle": "Bill Summary",
+  "paymentTitle": "Payment History",
+  "defaultAll": {
+    "id": "all",
+    "name": "All Account",
+    "summary": {
+      "price": {
+        "currency": "hkd",
+        "currencyTag": "HK$",
+        "value": 5000.00
+      },
+      "cutoffDate": "2020-07-06",
+      "dueDate": "2020-07-01",
+      "summaryLabel": "Current Bill OS Balance",
+      "extras": [{
+        "label": "Previous Balance B/F",
+        "price": {
+          "currency": "hkd",
+          "currencyTag": "HK$",
+          "value": 3500.00
+        }
+      }, {
+        "label": "Current Charge",
+        "price": {
+          "currency": "hkd",
+          "currencyTag": "HK$",
+          "value": 3000.00
+        }
+      }]
+    },
+    "records": [{
+      "status": "Paid",
+      "price": {
+        "currency": "hkd",
+        "currencyTag": "HK$",
+        "value": 5000.00
+      },
+      "date": "2020-06-05",
+      "channel": "PPS"
+    }, {
+      "status": "Paid",
+      "price": {
+        "currency": "hkd",
+        "currencyTag": "HK$",
+        "value": 6500.00
+      },
+      "date": "2020-05-05",
+      "channel": "ATM"
+    }]
+  }
+}
