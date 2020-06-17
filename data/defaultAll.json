@@ -1,5 +1,5 @@
 {
-  "title": "Bill/ Payment History",
+  "title": "Bill/ Payment History (API)",
   "icon": "standard:work_capacity_limit",
   "summaryTitle": "Bill Summary",
   "paymentTitle": "Payment History",
@@ -12,7 +12,7 @@
   "viewAll": "View all",
   "defaultAll": {
     "id": "all",
-    "name": "All Account",
+    "name": "All Account (API)",
     "summary": {
       "price": {
         "currency": "hkd",
