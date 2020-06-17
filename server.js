@@ -8,10 +8,11 @@ app.use(express.static('public'));
 app.use(bodyParser.json());
 
 // Default account data (all)
-app.get('/api/default', async function (request, response) {
+app.get('/api/all', async function (request, response) {
   fs.readFile('./data/defaultAll.json', 'utf8', (err, data) => {
     if (err) { throw err; }
 
+    response.setHeader('Content-Type', 'application/json');
     response.send(JSON.parse(data));
   })
 });
@@ -32,6 +33,7 @@ app.get('/api/accounts', function (request, response) {
       result = accountsData;
     }
 
+    response.setHeader('Content-Type', 'application/json');
     response.send(JSON.parse(JSON.stringify(result)));
   })
 });
@@ -52,6 +54,7 @@ app.get('/api/payhistory', function (request, response) {
       result = paymentData;
     }
 
+    response.setHeader('Content-Type', 'application/json');
     response.send(JSON.parse(JSON.stringify(result)));
   })
 });
@@ -61,6 +64,7 @@ app.get('/api/settings', function (request, response) {
   fs.readFile('./data/gadgetSettings.json', 'utf8', (err, data) => {
     if (err) { throw err; }
 
+    response.setHeader('Content-Type', 'application/json');
     response.send(JSON.parse(data));
   })
 });
