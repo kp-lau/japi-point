@@ -10,7 +10,6 @@
       },
       "cutoffDate": "2020-07-06",
       "dueDate": "2020-07-01",
-      "summaryLabel": "Current Bill OS Balance",
       "extras": [{
         "label": "Previous Balance B/F",
         "price": {

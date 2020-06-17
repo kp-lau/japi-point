@@ -2,5 +2,8 @@
   "title": "Bill/ Payment History",
   "icon": "standard:work_capacity_limit",
   "summaryTitle": "Bill Summary",
-  "paymentTitle": "Payment History"
+  "paymentTitle": "Payment History",
+  "cutoffLabel": "Bill cut off date: ",
+  "dueLabel": "Payment due date: ",
+  "summaryLabel": "Current Bill OS Balance"
 }

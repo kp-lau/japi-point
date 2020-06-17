@@ -3,6 +3,9 @@
   "icon": "standard:work_capacity_limit",
   "summaryTitle": "Bill Summary",
   "paymentTitle": "Payment History",
+  "cutoffLabel": "Bill cut off date: ",
+  "dueLabel": "Payment due date: ",
+  "summaryLabel": "Current Bill OS Balance",
   "defaultAll": {
     "id": "all",
     "name": "All Account",
@@ -14,7 +17,6 @@
       },
       "cutoffDate": "2020-07-06",
       "dueDate": "2020-07-01",
-      "summaryLabel": "Current Bill OS Balance",
       "extras": [{
         "label": "Previous Balance B/F",
         "price": {
