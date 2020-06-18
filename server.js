@@ -1,74 +1,88 @@
-var express = require('express');
-var bodyParser = require('body-parser');
-var fs = require('fs');
-var app = express();
+const express = require('express');
+const bodyParser = require('body-parser');
+const fs = require('fs');
+const app = express();
 
 app.set('port', process.env.PORT || 5000);
 app.use(express.static('public'));
 app.use(bodyParser.json());
 
-// Default account data (all)
-app.get('/api/all', async function (request, response) {
+// MIDDLEWARE --------------------------------
+const setHeader = require('./middleware/setHeader');
+app.use(setHeader);
+
+// API ---------------------------------------
+// API (1): Default settings
+app.get('/api/all', async function (req, res) {
   fs.readFile('./data/defaultAll.json', 'utf8', (err, data) => {
     if (err) { throw err; }
 
-    response.setHeader('Content-Type', 'application/json');
-    response.send(JSON.parse(data));
+    res.send(JSON.parse(data));
   })
 });
 
-// Account data
-app.get('/api/accounts', function (request, response) {
-  var id = request.query.id;
+// API (2): Account Data
+app.get('/api/accounts/:id', function (req, res) {
+  const id = req.params.id
 
   fs.readFile('./data/accounts.json', 'utf8', (err, data) => {
     if (err) { throw err; }
 
-    var result;
-    var accountsData = JSON.parse(data);
+    let result;
+    let accountsData = JSON.parse(data);
 
-    if (id) {
+    if (id && parseInt(id)) {
       result = accountsData.filter(x => x.id === parseInt(id));
     } else {
       result = accountsData;
     }
 
-    response.setHeader('Content-Type', 'application/json');
-    response.send(JSON.parse(JSON.stringify(result)));
+    res.send(JSON.parse(JSON.stringify(result)));
+  })
+});
+app.get('/api/accounts', function (req, res) {
+  fs.readFile('./data/accounts.json', 'utf8', (err, data) => {
+    if (err) { throw err; }
+
+    res.send(JSON.parse(data));
   })
 });
 
-// Payment data
-app.get('/api/payhistory', function (request, response) {
-  var accountId = request.query.accountId;
+// API (3): Payment Data
+app.get('/api/payhistory/:id', function (req, res) {
+  const id = req.params.id
 
   fs.readFile('./data/paymentHistory.json', 'utf8', (err, data) => {
     if (err) { throw err; }
 
-    var result;
-    var paymentData = JSON.parse(data);
+    let result;
+    let paymentData = JSON.parse(data);
 
-    if (accountId) {
-      result = paymentData.filter(x => x.accountId === parseInt(accountId));
+    if (id && parseInt(id)) {
+      result = paymentData.filter(x => x.accountId === parseInt(id));
     } else {
       result = paymentData;
     }
 
-    response.setHeader('Content-Type', 'application/json');
-    response.send(JSON.parse(JSON.stringify(result)));
+    res.send(JSON.parse(JSON.stringify(result)));
+  })
+});
+app.get('/api/payhistory', function (req, res) {
+  fs.readFile('./data/paymentHistory.json', 'utf8', (err, data) => {
+    if (err) { throw err; }
+
+    res.send(JSON.parse(data));
   })
 });
 
-// Gadget data
-app.get('/api/settings', function (request, response) {
+// API (4): Gadget Data
+app.get('/api/settings', function (req, res) {
   fs.readFile('./data/gadgetSettings.json', 'utf8', (err, data) => {
     if (err) { throw err; }
 
-    response.setHeader('Content-Type', 'application/json');
-    response.send(JSON.parse(data));
+    res.send(JSON.parse(data));
   })
 });
-
 
 app.listen(app.get('port'), function () {
   console.log('Express server listening on port ' + app.get('port'));
