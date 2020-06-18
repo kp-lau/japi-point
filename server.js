@@ -12,9 +12,9 @@ const setHeader = require('./middleware/setHeader');
 app.use(setHeader);
 
 // API ---------------------------------------
-// API (1): Default settings
-app.get('/api/all', async function (req, res) {
-  fs.readFile('./data/defaultAll.json', 'utf8', (err, data) => {
+// API (1): Gadget Data (default)
+app.get('/api/settings', function (req, res) {
+  fs.readFile('./data/gadgetSettings.json', 'utf8', (err, data) => {
     if (err) { throw err; }
 
     res.send(JSON.parse(data));
@@ -75,15 +75,9 @@ app.get('/api/payhistory', function (req, res) {
   })
 });
 
-// API (4): Gadget Data
-app.get('/api/settings', function (req, res) {
-  fs.readFile('./data/gadgetSettings.json', 'utf8', (err, data) => {
-    if (err) { throw err; }
-
-    res.send(JSON.parse(data));
-  })
-});
 
 app.listen(app.get('port'), function () {
   console.log('Express server listening on port ' + app.get('port'));
 });
+
+// TODO: Lang case
