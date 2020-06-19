@@ -1,8 +1,8 @@
 {
   "title": "Bill/ Payment History (API)",
-  "icon": "standard:work_capacity_limit",
-  "summaryTitle": "Bill Summary",
-  "paymentTitle": "Payment History",
+  "icon": "standard:team_member",
+  "summaryTitle": "Bill Summary (API)",
+  "paymentTitle": "Payment History (API)",
   "cutoffLabel": "Bill cut off date: ",
   "dueLabel": "Payment due date: ",
   "summaryLabel": "Current Bill OS Balance",
