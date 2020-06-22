@@ -1,7 +1,7 @@
 [
   {
     "id": 10001,
-    "name": "Account 10001 (API)",
+    "name": "Account 10001 (fetch from API)",
     "summary": {
       "price": {
         "currency": "hkd",
@@ -29,7 +29,7 @@
   },
   {
     "id": 10002,
-    "name": "Account 10002 (API)",
+    "name": "Account 10002 (fetch from API)",
     "summary": {
       "price": {
         "currency": "hkd",
@@ -57,7 +57,7 @@
   },
   {
     "id": 10003,
-    "name": "Account 10003 (API)",
+    "name": "Account 10003 (fetch from API)",
     "summary": {
       "price": {
         "currency": "jpy",

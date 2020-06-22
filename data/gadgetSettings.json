@@ -1,8 +1,8 @@
 {
-  "title": "Bill/ Payment History (API)",
+  "title": "Bill/ Payment History (*API)",
   "icon": "standard:team_member",
-  "summaryTitle": "Bill Summary (API)",
-  "paymentTitle": "Payment History (API)",
+  "summaryTitle": "Bill Summary",
+  "paymentTitle": "Payment History",
   "cutoffLabel": "Bill cut off date: ",
   "dueLabel": "Payment due date: ",
   "summaryLabel": "Current Bill OS Balance",
@@ -12,7 +12,7 @@
   "viewAll": "View all",
   "defaultAll": {
     "id": "all",
-    "name": "All Account (API)",
+    "name": "All Account",
     "summary": {
       "price": {
         "currency": "hkd",
