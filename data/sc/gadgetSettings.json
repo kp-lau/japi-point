@@ -1,0 +1,60 @@
+{
+  "title": "账单丶付款记录 (*API)",
+  "icon": "standard:team_member",
+  "summaryTitle": "帐单摘要",
+  "paymentTitle": "付款记录",
+  "cutoffLabel": "帐单截止日期: ",
+  "dueLabel": "付款截止日期: ",
+  "summaryLabel": "账单馀额",
+  "paymentStatus": "状态",
+  "paymentDate": "支付日期: ",
+  "paymentChannel": "付款方式: ",
+  "viewAll": "查看全部",
+  "defaultAll": {
+    "id": "all",
+    "name": "All Account",
+    "summary": {
+      "price": {
+        "currency": "hkd",
+        "currencyTag": "HK$",
+        "value": 5000.00
+      },
+      "cutoffDate": "2020-07-06",
+      "dueDate": "2020-07-01",
+      "extras": [{
+        "label": "Previous Balance B/F",
+        "price": {
+          "currency": "hkd",
+          "currencyTag": "HK$",
+          "value": 3500.00
+        }
+      }, {
+        "label": "Current Charge",
+        "price": {
+          "currency": "hkd",
+          "currencyTag": "HK$",
+          "value": 3000.00
+        }
+      }]
+    },
+    "records": [{
+      "status": "Paid",
+      "price": {
+        "currency": "hkd",
+        "currencyTag": "HK$",
+        "value": 5000.00
+      },
+      "date": "2020-06-05",
+      "channel": "PPS"
+    }, {
+      "status": "Paid",
+      "price": {
+        "currency": "hkd",
+        "currencyTag": "HK$",
+        "value": 6500.00
+      },
+      "date": "2020-05-05",
+      "channel": "ATM"
+    }]
+  }
+}

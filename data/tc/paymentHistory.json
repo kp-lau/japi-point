@@ -1,0 +1,64 @@
+[{
+  "accountId": 10001,
+  "records": [{
+    "status": "已付費",
+    "price": {
+      "currency": "hkd",
+      "currencyTag": "HK$",
+      "value": 500.00
+    },
+    "date": "2020-06-05",
+    "channel": "PPS"
+  }, {
+    "status": "已付費",
+    "price": {
+      "currency": "hkd",
+      "currencyTag": "HK$",
+      "value": 650.00
+    },
+    "date": "2020-05-05",
+    "channel": "ATM"
+  }]
+}, {
+  "accountId": 10002,
+  "records": [{
+    "status": "未付",
+    "price": {
+      "currency": "hkd",
+      "currencyTag": "HK$",
+      "value": 400.00
+    },
+    "date": "2020-06-05",
+    "channel": "現金"
+  }, {
+    "status": "已付費",
+    "price": {
+      "currency": "hkd",
+      "currencyTag": "HK$",
+      "value": 350.00
+    },
+    "date": "2020-05-05",
+    "channel": "現金"
+  }]
+}, {
+  "accountId": 10003,
+  "records": [{
+    "status": "失敗",
+    "price": {
+      "currency": "jpy",
+      "currencyTag": "JPY$",
+      "value": 2500.00
+    },
+    "date": "2020-06-05",
+    "channel": "MasterCard"
+  }, {
+    "status": "已付費",
+    "price": {
+      "currency": "jpy",
+      "currencyTag": "JPY$",
+      "value": 2650.00
+    },
+    "date": "2020-05-05",
+    "channel": "MasterCard"
+  }]
+}]

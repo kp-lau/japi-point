@@ -1,0 +1,86 @@
+[
+  {
+    "id": 10001,
+    "name": "账户 10001 (从伺服器)",
+    "summary": {
+      "price": {
+        "currency": "hkd",
+        "currencyTag": "HK$",
+        "value": 1000.00
+      },
+      "cutoffDate": "2020-07-06",
+      "dueDate": "2020-07-01",
+      "extras": [{
+        "label": "馀额 B/F",
+        "price": {
+          "currency": "hkd",
+          "currencyTag": "HK$",
+          "value": -200.00
+        }
+      }, {
+        "label": "费用",
+        "price": {
+          "currency": "hkd",
+          "currencyTag": "HK$",
+          "value": 500.00
+        }
+      }]
+    }
+  },
+  {
+    "id": 10002,
+    "name": "账户 10002 (从伺服器)",
+    "summary": {
+      "price": {
+        "currency": "hkd",
+        "currencyTag": "HK$",
+        "value": 900.00
+      },
+      "cutoffDate": "2020-07-15",
+      "dueDate": "2020-07-10",
+      "extras": [{
+        "label": "馀额 B/F",
+        "price": {
+          "currency": "hkd",
+          "currencyTag": "HK$",
+          "value": 100.00
+        }
+      }, {
+        "label": "费用",
+        "price": {
+          "currency": "hkd",
+          "currencyTag": "HK$",
+          "value": 600.00
+        }
+      }]
+    }
+  },
+  {
+    "id": 10003,
+    "name": "账户 10003 (从伺服器)",
+    "summary": {
+      "price": {
+        "currency": "jpy",
+        "currencyTag": "JPY$",
+        "value": 7200.00
+      },
+      "cutoffDate": "2020-07-20",
+      "dueDate": "2020-07-12",
+      "extras": [{
+        "label": "馀额 B/F",
+        "price": {
+          "currency": "jpy",
+          "currencyTag": "JPY$",
+          "value": 0.00
+        }
+      }, {
+        "label": "费用",
+        "price": {
+          "currency": "jpy",
+          "currencyTag": "JPY$",
+          "value": 5000.00
+        }
+      }]
+    }
+  }
+]
