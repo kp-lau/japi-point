@@ -97,8 +97,19 @@
       </div>
     </section>
 
-    <div class="album py-5 bg-light">
+    <section class="controls">
       <div class="container">
+        <div class="btn-group btn-group-sm" role="group" aria-label="Languages">
+          <button type="button" class="btn lang btn-secondary en">EN</button>
+          <button type="button" class="btn lang btn-secondary tc">TC</button>
+          <button type="button" class="btn lang btn-secondary sc">SC</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="album py-5 bg-light block-en">
+      <div class="container">
+        <h4 class="lang-title">English</h4>
 
         <div class="row">
           <div class="col-md-4">
@@ -180,6 +191,174 @@
       </div>
     </div>
 
+    <div class="album py-5 bg-light block-tc hidden">
+      <div class="container">
+        <h4>繁體中文</h4>
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                <title>設定</title>
+                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                  dy=".3em">設定</text>
+              </svg>
+              <div class="card-body">
+                <p class="card-text">All settings is stored here.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="/api/settings/zh-Hant-TW"><button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
+                    <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                  </div>
+                  <!-- <small class="text-muted">9 mins</small> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                <title>賬戶</title>
+                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                  dy=".3em">賬戶</text>
+              </svg>
+              <div class="card-body">
+                <p class="card-text">All accounts data is listing here.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="/api/accounts/zh-Hant-TW"><button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
+                    <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                  </div>
+                  <!-- <small class="text-muted">9 mins</small> -->
+
+                  <div class="btn-group">
+                    <a href="/api/accounts/zh-Hant-TW/10001"><button type="button" class="btn btn-sm btn-light">10001</button></a>
+                    <a href="/api/accounts/zh-Hant-TW/10002"><button type="button" class="btn btn-sm btn-light">10002</button></a>
+                    <a href="/api/accounts/zh-Hant-TW/10003"><button type="button" class="btn btn-sm btn-light">10003</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                <title>付款記錄</title>
+                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                  dy=".3em">付款記錄</text>
+              </svg>
+              <div class="card-body">
+                <p class="card-text">All payment history is stored here.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="/api/payhistory"><button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
+                    <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                  </div>
+                  <!-- <small class="text-muted">9 mins</small> -->
+
+                  <div class="btn-group">
+                    <a href="/api/payhistory/zh-Hant-TW/10001"><button type="button" class="btn btn-sm btn-light">10001</button></a>
+                    <a href="/api/payhistory/zh-Hant-TW/10002"><button type="button" class="btn btn-sm btn-light">10002</button></a>
+                    <a href="/api/payhistory/zh-Hant-TW/10003"><button type="button" class="btn btn-sm btn-light">10003</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="album py-5 bg-light block-sc hidden">
+      <div class="container">
+        <h4>简体中文</h4>
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                <title>设定</title>
+                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                  dy=".3em">设定</text>
+              </svg>
+              <div class="card-body">
+                <p class="card-text">All settings is stored here.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="/api/settings/zh-Hant-CN"><button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
+                    <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                  </div>
+                  <!-- <small class="text-muted">9 mins</small> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                <title>账户</title>
+                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                  dy=".3em">账户</text>
+              </svg>
+              <div class="card-body">
+                <p class="card-text">All accounts data is listing here.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="/api/accounts/zh-Hant-CN"><button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
+                    <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                  </div>
+                  <!-- <small class="text-muted">9 mins</small> -->
+
+                  <div class="btn-group">
+                    <a href="/api/accounts/zh-Hant-CN/10001"><button type="button" class="btn btn-sm btn-light">10001</button></a>
+                    <a href="/api/accounts/zh-Hant-CN/10002"><button type="button" class="btn btn-sm btn-light">10002</button></a>
+                    <a href="/api/accounts/zh-Hant-CN/10003"><button type="button" class="btn btn-sm btn-light">10003</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                <title>付款记录</title>
+                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                  dy=".3em">付款记录</text>
+              </svg>
+              <div class="card-body">
+                <p class="card-text">All payment history is stored here.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="/api/zh-Hant-CN/payhistory"><button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
+                    <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                  </div>
+                  <!-- <small class="text-muted">9 mins</small> -->
+
+                  <div class="btn-group">
+                    <a href="/api/payhistory/zh-Hant-CN/10001"><button type="button" class="btn btn-sm btn-light">10001</button></a>
+                    <a href="/api/payhistory/zh-Hant-CN/10002"><button type="button" class="btn btn-sm btn-light">10002</button></a>
+                    <a href="/api/payhistory/zh-Hant-CN/10003"><button type="button" class="btn btn-sm btn-light">10003</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
   </main>
 
   <footer class="text-muted">
@@ -199,6 +378,7 @@
   <script src="/js/bootstrap.bundle.min.js"
     integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous">
   </script>
+  <script src="/js/main.js"></script>
 </body>
 
 </html>

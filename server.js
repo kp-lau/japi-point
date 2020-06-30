@@ -37,7 +37,7 @@ app.get('/api/settings', function (req, res) {
 });
 
 // API (2): Account Data
-app.get('/api/accounts/:lang/:id', function (req, res) {
+app.get('/api/accounts/:id/:lang', function (req, res) {
   const id = req.params.id;
   const lang = applyLangDir(req.params.lang);
 
@@ -83,7 +83,7 @@ app.get('/api/accounts', function (req, res) {
 });
 
 // API (3): Payment Data
-app.get('/api/payhistory/:lang/:id', function (req, res) {
+app.get('/api/payhistory/:id/:lang', function (req, res) {
   const id = req.params.id;
   const lang = applyLangDir(req.params.lang);
 
