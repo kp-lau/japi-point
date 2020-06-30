@@ -29,7 +29,9 @@ app.get('/api/settings/:lang', function (req, res) {
   })
 });
 app.get('/api/settings', function (req, res) {
-  fs.readFile('./data/en/gadgetSettings.json', 'utf8', (err, data) => {
+  const lang = applyLangDir(req.query.lang) || 'en'; 
+
+  fs.readFile(`./data/${lang}/gadgetSettings.json`, 'utf8', (err, data) => {
     if (err) { throw err; }
 
     res.send(JSON.parse(data));
@@ -58,8 +60,9 @@ app.get('/api/accounts/:id/:lang', function (req, res) {
 });
 app.get('/api/accounts/:id', function (req, res) {
   const id = req.params.id;
+  const lang = applyLangDir(req.query.lang) || 'en';
 
-  fs.readFile('./data/en/accounts.json', 'utf8', (err, data) => {
+  fs.readFile(`./data/${lang}/accounts.json`, 'utf8', (err, data) => {
     if (err) { throw err; }
 
     let result;
@@ -75,7 +78,9 @@ app.get('/api/accounts/:id', function (req, res) {
   })
 });
 app.get('/api/accounts', function (req, res) {
-  fs.readFile('./data/en/accounts.json', 'utf8', (err, data) => {
+  const lang = applyLangDir(req.query.lang) || 'en'; 
+
+  fs.readFile(`./data/${lang}/accounts.json`, 'utf8', (err, data) => {
     if (err) { throw err; }
 
     res.send(JSON.parse(data));
@@ -104,8 +109,9 @@ app.get('/api/payhistory/:id/:lang', function (req, res) {
 });
 app.get('/api/payhistory/:id', function (req, res) {
   const id = req.params.id;
+  const lang = applyLangDir(req.query.lang) || 'en'; 
 
-  fs.readFile('./data/en/paymentHistory.json', 'utf8', (err, data) => {
+  fs.readFile(`./data/${lang}/paymentHistory.json`, 'utf8', (err, data) => {
     if (err) { throw err; }
 
     let result;
@@ -121,7 +127,9 @@ app.get('/api/payhistory/:id', function (req, res) {
   })
 });
 app.get('/api/payhistory', function (req, res) {
-  fs.readFile('./data/en/paymentHistory.json', 'utf8', (err, data) => {
+  const lang = applyLangDir(req.query.lang) || 'en'; 
+
+  fs.readFile(`./data/${lang}/paymentHistory.json`, 'utf8', (err, data) => {
     if (err) { throw err; }
 
     res.send(JSON.parse(data));
